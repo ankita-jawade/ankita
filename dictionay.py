@@ -22,8 +22,7 @@ bollywood_2025 = {
     "Sikandar": ["Salman Khan", "Rashmika Mandanna"],
     "Housefull 5": ["Akshay Kumar", "Riteish Deshmukh", "Kriti Sanon"],
     "War 2": ["Hrithik Roshan", "Jr NTR", "Kiara Advani"],
-    "Raid 2": ["Ajay Devgn", "Vaani Kapoor"],
-    
+    "Raid 2": ["Ajay Devgn", "Vaani Kapoor","Akshay kumar"]   
 }
 d_cast = bollywood_2025["Sikandar"]
 h_cast = bollywood_2025["Housefull 5"]
@@ -32,4 +31,11 @@ R_cast = bollywood_2025["Raid 2"]
 print(len(d_cast))
 for name,cast in bollywood_2025.items():
     print( name, 'total cast', {len(cast)})
-    
+
+# print name of movie which has akshay kumar in cast
+count=0
+for name,cast in bollywood_2025.items():
+    if "Akshay Kumar" in cast:
+        print('movie name with akshay kumar in cast:', name)
+        count+=1
+print('total movies with akshay kumar:', count)
